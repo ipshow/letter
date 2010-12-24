@@ -1,0 +1,13 @@
+<%= semantic_form_for @letter do |f| %>
+  <%= f.inputs do %>
+  
+  <%= f.input :content, :label => "信件正文：", :as => :ckeditor %>
+  <%= f.input :recipient, :label => "收件人：" %>
+  <%= f.input :province, :label => "省/直辖市：" %>
+  <%= f.input :address, :label => "详细地址：" %>
+  <%= f.input :postcode, :label => "邮政编码：" %>
+  <%= f.input :published_at, :label => "提交日期：" %>
+
+   <%= f.buttons %>
+  <% end %>
+<% end %>

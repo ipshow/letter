@@ -1,0 +1,34 @@
+<% title "Letter" %>
+
+<p>
+  <strong>Content:</strong>
+  <%= @letter.content %>
+</p>
+<p>
+  <strong>Recipient:</strong>
+  <%= @letter.recipient %>
+</p>
+<p>
+  <strong>Province:</strong>
+  <%= @letter.province %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @letter.address %>
+</p>
+<p>
+  <strong>Postcode:</strong>
+  <%= @letter.postcode %>
+</p>
+<p>
+  <strong>Published At:</strong>
+  <%= @letter.published_at %>
+</p>
+
+
+
+<p>
+  <%= link_to "Edit", edit_letter_path(@letter) %> |
+  <%= link_to "Destroy", @letter, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", letters_path %>
+</p>
